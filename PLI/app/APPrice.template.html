@@ -1,0 +1,31 @@
+<!-- Panel -->
+<!-- <div *ngFor="let comp of completed">
+    <div *ngIf="comp.component == 'apmodel'">
+        <article class="panel {{comp.class}}">
+    </div>
+</div> -->
+<article class="panel {{pannelClass}}">
+    <!-- Icon -->
+    <div class="panel-heading icon">
+        <i class="glyphicon glyphicon-plus"></i>
+    </div>
+    <!-- /Icon -->
+
+    <!-- Heading -->
+    <div class="panel-heading">
+        <h3 class="panel-title">Quel serait le prix de vente de ton téléphone ?</h3>
+    </div>
+    <!-- /Heading -->
+
+    <!-- Body -->
+    <div class="panel-body">
+        <div class="form-group">
+            <label class="control-label" for="textinput">Prix</label>
+            <input type="text" placeholder="Tape ton prix" class="form-control">
+        </div>
+        <a (click)="saveStep()"> Click </a>
+    </div>
+    <!-- /Body -->
+
+</article>
+<!-- /Panel -->

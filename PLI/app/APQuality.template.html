@@ -1,0 +1,61 @@
+<!-- Panel -->
+<!-- <div *ngFor="let comp of completed">
+    <div *ngIf="comp.component == 'apmodel'">
+        <article class="panel {{comp.class}}">
+    </div>
+</div> -->
+<article class="panel {{pannelClass}}">
+    <!-- Icon -->
+    <div class="panel-heading icon">
+        <i class="glyphicon glyphicon-plus"></i>
+    </div>
+    <!-- /Icon -->
+
+    <!-- Heading -->
+    <div class="panel-heading">
+        <h3 class="panel-title">Quel est l'état de ton téléphone ?</h3>
+    </div>
+    <!-- /Heading -->
+
+    <!-- Body -->
+    <div class="panel-body">
+        
+        
+        <div class="col-md-12">
+            <div class="blockquote-box {{blockquote[0].class}} clearfix" (click)="selectedQuality('blockquotesuccess');">
+                <div class="square pull-left">
+                    <span class="glyphicon glyphicon-phone glyphicon-lg"></span>
+                </div>
+                <h4>
+                    Trés Bonne état</h4>
+                <p>
+                    Ton téléphone est tous jolie il sort (on pourrais le croire) tous juste de ça boite d'origine.
+                    En gros, ton téléphone est dans un état irréprochable.
+                </p>
+            </div>
+            <div class="blockquote-box {{blockquote[1].class}} clearfix" (click)="selectedQuality('blockquotewarning');">
+                <div class="square pull-left">
+                    <span class="glyphicon glyphicon-phone glyphicon-lg"></span>
+                </div>
+                <h4>
+                    Etat Moyen</h4>
+                <p>
+                    Ton téléphone a quelques rayures par ci par la, il reste dans un état correcte et moyennement satisfesant.
+                </p>
+            </div>
+            <div class="blockquote-box {{blockquote[2].class}} clearfix" (click)="selectedQuality('blockquotedanger');">
+                <div class="square pull-left">
+                    <span class="glyphicon glyphicon-phone glyphicon-lg"></span>
+                </div>
+                <h4>
+                    Mauvaise état</h4>
+                <p>
+                    Ton téléphone a plusieur rayures il est dans un état vraiment moyen. Mais attention il reste encore fonctionnelle.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- /Body -->
+
+</article>
+<!-- /Panel -->

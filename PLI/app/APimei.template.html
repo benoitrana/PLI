@@ -1,0 +1,29 @@
+<!-- Panel -->
+<article class="panel {{pannelClass}}">
+
+    <!-- Icon -->
+    <div class="panel-heading icon">
+        <i class="glyphicon glyphicon-plus"></i>
+    </div>
+    <!-- /Icon -->
+
+    <!-- Heading -->
+    <div class="panel-heading">
+        <h3 class="panel-title">Quel est le numéro <abbr title="Le numero IMEI ce trouve sur le dos de ton téléphone ou dans tes réglages ;)">IMEI</abbr>  de ton téléphone ?</h3>
+    </div>
+    <!-- /Heading -->
+
+    <!-- Body -->
+    <div class="panel-body">
+        <div class="form-group" *ngIf="printInput == true">
+            <label class="control-label" for="textinput">Numéro IMEI</label>
+            <input type="text" placeholder="Tape ton numéro IMEI" class="form-control">
+        </div>
+        <a (click)="saveStep()"> Click </a>
+        <a *ngIf="printInput == true" (click)="ignoreStep(false)" >Ignorer cette étape</a>
+        <a *ngIf="printInput == false" (click)="ignoreStep(true)" >Compléter cette étape</a>
+    </div>
+    <!-- /Body -->
+
+</article>  
+<!-- /Panel -->

@@ -1,0 +1,39 @@
+<!-- Panel -->
+<!-- <div *ngFor="let comp of completed">
+    <div *ngIf="comp.component == 'apmodel'">
+        <article class="panel {{comp.class}}">
+    </div>
+</div> -->
+<article class="panel {{pannelClass}}">
+    <!-- Icon -->
+    <div class="panel-heading icon">
+        <i class="glyphicon glyphicon-plus"></i>
+    </div>
+    <!-- /Icon -->
+
+    <!-- Heading -->
+    <div class="panel-heading">
+        <h3 class="panel-title">Quel est le modéle de ton téléphone ?</h3>
+    </div>
+    <!-- /Heading -->
+
+    <!-- Body -->
+    <div class="panel-body">
+    <label class="control-label" for="textinput">Modéle</label>
+        <select class="form-control" (change)="saveStep($event.target.value)">
+            <option disabled value="">Choisi ton modéle</option>
+            <option value="4">4</option>
+            <option value="4S">4S</option>
+            <option value="5">5</option>
+            <option value="5S">5S</option>
+            <option value="SE">SE</option>
+            <option value="6">6</option>
+            <option value="6 Plus">6 Plus</option>
+            <option value="6S">6S</option>
+            <option value="6S Plus">6S Plus</option>
+        </select>
+    </div>
+    <!-- /Body -->
+
+</article>
+<!-- /Panel -->

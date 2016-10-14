@@ -1,0 +1,79 @@
+<!-- Panel -->
+<!-- <div *ngFor="let comp of completed">
+    <div *ngIf="comp.component == 'apmodel'">
+        <article class="panel {{comp.class}}">
+    </div>
+</div> -->
+<article class="panel {{pannelClass}}">
+    <!-- Icon -->
+    <div class="panel-heading icon">
+        <i class="glyphicon glyphicon-plus"></i>
+    </div>
+    <!-- /Icon -->
+
+    <!-- Heading -->
+    <div class="panel-heading">
+        <h3 class="panel-title">Super ! Voici un résumé de ton téléphone</h3>
+    </div>
+    <!-- /Heading -->
+
+    <!-- Body -->
+    <div class="panel-body">
+	    <div class="row">
+	    	<div class="col-lg-6 APSummary">
+	    		&nbsp;
+	    		<form>
+    <span id="fileselector">
+        <label class="btn btn-default" for="upload-file-selector">
+            <input id="upload-file-selector" type="file" multiple>
+            <i class="fa_icon icon-upload-alt margin-correction"></i>upload file
+        </label>
+    </span>
+</form>
+	    	</div>
+	    	<div class="col-lg-6">
+		    	<table class="table table-striped">
+				    <thead>
+				     	<tr>
+					        <th>Caractéristique téléphone</th>
+				     	</tr>
+				    </thead>
+				    <tbody>
+				     	<tr>
+				     		<td><label>Marque: </label></td>
+					        <td><p>iPhone</p></td>
+				      	</tr>
+				      	<tr>
+				     		<td><label>Modél: </label></td>
+					        <td><p>4S</p></td>
+				      	</tr>
+				      	<tr>
+				     		<td><label>IMEI: </label></td>
+					        <td><p>N/A</p></td>
+				      	</tr>
+				      	<tr>
+				     		<td><label>Désimlocker: </label></td>
+					        <td><p>Oui</p></td>
+				      	</tr>
+				      	<tr>
+				     		<td><label>Capacité: </label></td>
+					        <td><p>16GB</p></td>
+				      	</tr>
+				      	<tr>
+				     		<td><label>Garantie: </label></td>
+					        <td><p>Non</p></td>
+				      	</tr>
+				      	<tr>
+				     		<td><label>Etat: </label></td>
+					        <td><p>Trés propre</p></td>
+				      	</tr>
+				  	</tbody>
+				</table>
+	    	</div>
+	    </div>
+        
+    </div>
+    <!-- /Body -->
+
+</article>
+<!-- /Panel -->
